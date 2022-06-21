@@ -2,7 +2,20 @@
 <p> interpolaçao também serve para expressão matemática {{ 2+2 }}</p>
 <p> posso chamar uma função na interpolação {{ getValor() }}</p>
 
+<span 
+(mouseover)="mouseOutOver()"
+(mouseout)="mouseOutOver()"
+[class.cor]="mouseOver">
+Passe o mouse sobre mim
+</span><br><br>
+
+<button (click)="altera()">  Me clique! </button><br>
+
+<input type="text" (keyup)="pressionado($event)"><br>
+
+<span> {{ valorAtual }} </span><br>
+
 <img src="{{ url }}"/>
 <!-- da maneira abaixo não precisa da interpolação - se chama property binding   -->
-<!-- [src] === bind.src -->
+<!-- [src] === bind.src --> 
 <img [src]="url" />

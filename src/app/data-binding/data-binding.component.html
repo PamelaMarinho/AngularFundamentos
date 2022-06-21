@@ -1,0 +1,8 @@
+<p>Essa string foi renderizada por interpolação: {{ info }}</p>
+<p> interpolaçao também serve para expressão matemática {{ 2+2 }}</p>
+<p> posso chamar uma função na interpolação {{ getValor() }}</p>
+
+<img src="{{ url }}"/>
+<!-- da maneira abaixo não precisa da interpolação - se chama property binding   -->
+<!-- [src] === bind.src -->
+<img [src]="url" />

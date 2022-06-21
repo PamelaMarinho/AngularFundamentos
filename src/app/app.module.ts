@@ -7,6 +7,7 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro-component';
 import { TesteModule } from './teste/teste.module';
 import { TerceiroModule } from './terceiro/terceiro.module';
 import { QuartoModule } from './quarto/quarto.module';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 
 //decorator @
@@ -16,6 +17,7 @@ import { QuartoModule } from './quarto/quarto.module';
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
+    DataBindingComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

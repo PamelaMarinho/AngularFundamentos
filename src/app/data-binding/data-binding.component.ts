@@ -16,10 +16,10 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
 
   info: string;
-  valorAtual: any;
   url= "http://lorempixel.com.br/200/100/?1";
+
+
   mouseOver: boolean = true;
- 
   mouseOutOver(){
     this.mouseOver = !this.mouseOver;
   }
@@ -28,13 +28,23 @@ export class DataBindingComponent implements OnInit {
     return 1
   }
 
+  pessoa: any = {
+    nome: "def",
+    idade: 28
+  }
+
+  nome: string  = "abc"
+
   altera(){
     console.log('Funfou')
   }
 
+  valorAtual: any;
   pressionado(evento:any){
     this.valorAtual = (<HTMLInputElement>(evento.target)).value
   }
+
+
 
   constructor() {
 

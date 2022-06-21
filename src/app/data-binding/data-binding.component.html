@@ -9,6 +9,24 @@
 Passe o mouse sobre mim
 </span><br><br>
 
+<input type="text"
+[value]="nome"  
+(input)="nome = $any($event.target).value"
+/><br>
+<!-- two way data binding precisa importar formsModule no app.modules e acrescentar no imports-->
+<!-- porque nhModel é uma diretiva e não uma propriedade do input. nhModel Pertence ao formsModule -->
+<input type="text"
+[(ngModel)]="nome"
+(ngModelChange)="nome = $any($event.target).value"
+/><br>
+
+<!-- bindon-ngModel === [(ngModel)] -->
+<input type="text" bindon-ngModel="pessoa.nome" />
+<input type="text" [(ngModel)]="pessoa.idade" />
+<p>"Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
+
+<span> Voce digitou: {{ nome }} </span><br>
+
 <button (click)="altera()">  Me clique! </button><br>
 
 <input type="text" (keyup)="pressionado($event)"><br>

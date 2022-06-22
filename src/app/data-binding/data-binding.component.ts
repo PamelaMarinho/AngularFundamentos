@@ -44,7 +44,7 @@ export class DataBindingComponent implements OnInit {
     this.valorAtual = (<HTMLInputElement>(evento.target)).value
   }
 
-
+  nome2: string = "angular!"
 
   constructor() {
 

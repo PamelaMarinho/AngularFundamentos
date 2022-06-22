@@ -1,4 +1,4 @@
-<p>Essa string foi renderizada por interpolação: {{ info }}</p>
+<!-- <p>Essa string foi renderizada por interpolação: {{ info }}</p>
 <p> interpolaçao também serve para expressão matemática {{ 2+2 }}</p>
 <p> posso chamar uma função na interpolação {{ getValor() }}</p>
 
@@ -12,16 +12,17 @@ Passe o mouse sobre mim
 <input type="text"
 [value]="nome"  
 (input)="nome = $any($event.target).value"
-/><br>
+/><br> -->
+
 <!-- two way data binding precisa importar formsModule no app.modules e acrescentar no imports-->
 <!-- porque nhModel é uma diretiva e não uma propriedade do input. nhModel Pertence ao formsModule -->
-<input type="text"
+<!-- <input type="text"
 [(ngModel)]="nome"
 (ngModelChange)="nome = $any($event.target).value"
-/><br>
+/><br> -->
 
 <!-- bindon-ngModel === [(ngModel)] -->
-<input type="text" bindon-ngModel="pessoa.nome" />
+<!-- <input type="text" bindon-ngModel="pessoa.nome" />
 <input type="text" [(ngModel)]="pessoa.idade" />
 <p>"Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
 
@@ -33,7 +34,12 @@ Passe o mouse sobre mim
 
 <span> {{ valorAtual }} </span><br>
 
-<img src="{{ url }}"/>
+<img src="{{ url }}"/> -->
+
 <!-- da maneira abaixo não precisa da interpolação - se chama property binding   -->
-<!-- [src] === bind.src --> 
-<img [src]="url" />
+<!-- [src] === bind.src 
+<img [src]="url" />--> 
+
+<h3> input/output properties</h3>
+
+<app-io-properties [nome-curso]="nome2"></app-io-properties>

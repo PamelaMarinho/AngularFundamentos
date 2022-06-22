@@ -9,6 +9,7 @@ import { TesteModule } from './teste/teste.module';
 import { TerceiroModule } from './terceiro/terceiro.module';
 import { QuartoModule } from './quarto/quarto.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { IoPropertiesComponent } from './io-properties/io-properties.component';
 
 
 //decorator @
@@ -19,6 +20,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     AppComponent,
     MeuPrimeiroComponent,
     DataBindingComponent,
+    IoPropertiesComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [
@@ -30,7 +32,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   TesteModule,
   TerceiroModule,
   QuartoModule,
-  FormsModule
+  FormsModule,
   ],
   //providers contem os serviços que ficarao disponiveis para todos os components declarados nesse módulo app
   providers: [],

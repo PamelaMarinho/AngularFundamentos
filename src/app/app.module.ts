@@ -9,7 +9,8 @@ import { TesteModule } from './teste/teste.module';
 import { TerceiroModule } from './terceiro/terceiro.module';
 import { QuartoModule } from './quarto/quarto.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { IoPropertiesComponent } from './io-properties/io-properties.component';
+import { IoPropertiesComponent } from './input-properties/io-properties.component';
+import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 
 
 //decorator @
@@ -21,6 +22,7 @@ import { IoPropertiesComponent } from './io-properties/io-properties.component';
     MeuPrimeiroComponent,
     DataBindingComponent,
     IoPropertiesComponent,
+    OutputPropertiesComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

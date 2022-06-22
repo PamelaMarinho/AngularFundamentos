@@ -39,9 +39,8 @@ export class DataBindingComponent implements OnInit {
     console.log('Funfou')
   }
 
-  valorAtual: any;
-  pressionado(evento:any){
-    this.valorAtual = (<HTMLInputElement>(evento.target)).value
+    onMudouValor(event: any){
+    console.log(event.novoValor)
   }
 
   nome2: string = "angular!"

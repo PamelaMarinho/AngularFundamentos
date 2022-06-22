@@ -1,10 +1,13 @@
 <div class="content" role="main">
 
-  <meu-primeiro-component></meu-primeiro-component>
+  <!-- <meu-primeiro-component></meu-primeiro-component>
   <app-teste></app-teste>
   <app-terceiro></app-terceiro>
   <app-quarto></app-quarto>
-  <app-data-binding></app-data-binding>
+  <app-data-binding></app-data-binding> -->
+  <button (click)="mudarValor()"  >Mudar valor</button>
+  <button (click)="deletar()">deletar</button>
+  <app-ciclo [valorInicial]="valor" *ngIf="!deletado"></app-ciclo>
 
 </div>
 

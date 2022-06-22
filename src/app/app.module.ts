@@ -11,6 +11,7 @@ import { QuartoModule } from './quarto/quarto.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { IoPropertiesComponent } from './input-properties/io-properties.component';
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 
 //decorator @
@@ -23,6 +24,7 @@ import { OutputPropertiesComponent } from './output-properties/output-properties
     DataBindingComponent,
     IoPropertiesComponent,
     OutputPropertiesComponent,
+    CicloComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

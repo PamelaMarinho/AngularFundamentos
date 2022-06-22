@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstProject';
+  valor: number = 5;
+  deletado: boolean = false;
+
+  mudarValor(){
+    this.valor++;
+  }
+
+  deletar(){
+    this.deletado = true;
+  }
 }

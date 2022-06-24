@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })  
 
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
 
   info: string;
   url= "http://lorempixel.com.br/200/100/?1";
@@ -51,7 +51,5 @@ export class DataBindingComponent implements OnInit {
 
    }
 
-  ngOnInit(): void {
-  }
 
 }

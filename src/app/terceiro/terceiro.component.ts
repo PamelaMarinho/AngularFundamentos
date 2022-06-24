@@ -5,7 +5,7 @@ import { TerceiroService } from './terceiro.service';
   templateUrl: './terceiro.component.html',
   styleUrls: ['./terceiro.component.css']
 })
-export class TerceiroComponent implements OnInit {
+export class TerceiroComponent {
 
   terceiro : String[];
 
@@ -14,11 +14,6 @@ export class TerceiroComponent implements OnInit {
     this.terceiro = this.TerceiroService.getTerceiro();
     
   }
-
-  ngOnInit(): void {
-  }
-
-
 
 
 }

@@ -19,7 +19,7 @@ import { TesteService } from './teste.service';
 })
 
 
-export class TesteComponent implements OnInit {
+export class TesteComponent {
   
 
   typescript: string;
@@ -35,7 +35,6 @@ export class TesteComponent implements OnInit {
       } */  
   }
 
-  ngOnInit(): void {
-  }
+
 
 }

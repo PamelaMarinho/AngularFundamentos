@@ -4,18 +4,15 @@ import { Component, inject, OnInit, Input } from '@angular/core';
   selector: 'app-io-properties',
   templateUrl: './io-properties.component.html',
   styleUrls: ['./io-properties.component.css'],
-  inputs: [
-   //pode salvar os inputs aqui ou no @input abaixo
-  ]
+ /*  inputs: [
+   pode salvar os inputs aqui ou no @input abaixo
+   menos indicado que o abaixo
+  ] */
 })
-export class IoPropertiesComponent implements OnInit {
-
+export class IoPropertiesComponent {
   //decorator faz com que fique visivel fora
-  @Input('nome-curso') nome: string = "";
+  @Input() nome: string = "";
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

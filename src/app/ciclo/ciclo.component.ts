@@ -1,8 +1,8 @@
 import {   
   Component,
   OnInit,
-  OnChanges,
-  DoCheck,
+  //OnChanges,
+  //DoCheck,
   AfterContentInit,
   AfterContentChecked,
   AfterViewInit,
@@ -14,8 +14,8 @@ import {
   templateUrl: './ciclo.component.html',
   styleUrls: ['./ciclo.component.css']
 })
-export class CicloComponent implements OnChanges, OnInit,
-DoCheck, AfterContentInit, AfterContentChecked,
+export class CicloComponent implements  OnInit,//OnChanges, DoCheck,
+ AfterContentInit, AfterContentChecked,
 AfterViewInit, AfterViewChecked, OnDestroy{
 
   @Input() valorInicial: number = 10;  
@@ -24,17 +24,17 @@ AfterViewInit, AfterViewChecked, OnDestroy{
     this.log('constructor');
   }
 
-  ngOnChanges() {
+ /*  ngOnChanges() {
     this.log('ngOnChanges');
-  }
+  } */
 
   ngOnInit() {
     this.log('ngOnInit');
   }
 
-  ngDoCheck() {
+/*   ngDoCheck() {
     this.log('ngDoCheck');
-  }
+  } */
 
   ngAfterContentInit() {
     this.log('ngAfterContentInit');

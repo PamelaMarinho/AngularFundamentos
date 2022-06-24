@@ -12,6 +12,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { IoPropertiesComponent } from './input-properties/io-properties.component';
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 import { CicloComponent } from './ciclo/ciclo.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 
 
 //decorator @
@@ -25,6 +27,8 @@ import { CicloComponent } from './ciclo/ciclo.component';
     IoPropertiesComponent,
     OutputPropertiesComponent,
     CicloComponent,
+    DiretivaNgifComponent,
+    DiretivaNgSwitchComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

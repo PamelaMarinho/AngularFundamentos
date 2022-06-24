@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'contador',
+  selector: 'app-contador',
   templateUrl: './output-properties.component.html',
   styleUrls: ['./output-properties.component.css']
 })
-export class OutputPropertiesComponent implements OnInit {
+export class OutputPropertiesComponent {
 
   @Input() valor: number = 0;
 
@@ -26,7 +26,5 @@ export class OutputPropertiesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

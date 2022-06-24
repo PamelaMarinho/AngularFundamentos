@@ -6,7 +6,7 @@ import { QuartoService } from './quarto.service';
   templateUrl: './quarto.component.html',
   styleUrls: ['./quarto.component.css']
 })
-export class QuartoComponent implements OnInit {
+export class QuartoComponent{
 
   quarto: string;
 
@@ -15,7 +15,5 @@ export class QuartoComponent implements OnInit {
     this.quarto = this.QuartoService.getQuarto();
    }
 
-  ngOnInit(): void {
-  }
 
 }

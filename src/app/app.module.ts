@@ -14,6 +14,7 @@ import { OutputPropertiesComponent } from './output-properties/output-properties
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
+import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.component';
 
 
 //decorator @
@@ -29,6 +30,7 @@ import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-swit
     CicloComponent,
     DiretivaNgifComponent,
     DiretivaNgSwitchComponent,
+    DiretivaNgForComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

@@ -19,6 +19,7 @@ import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
+import { ElementrefRendererComponent } from './elementref-renderer/elementref-renderer.component';
 
 
 //decorator @
@@ -38,6 +39,7 @@ import { NgContentComponent } from './ng-content/ng-content.component';
     DiretivaNgstyleComponent,
     OperadorElvisComponent,
     NgContentComponent,
+    ElementrefRendererComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

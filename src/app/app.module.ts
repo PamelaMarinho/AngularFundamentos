@@ -18,6 +18,7 @@ import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.compone
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 
 //decorator @
@@ -36,6 +37,7 @@ import { OperadorElvisComponent } from './operador-elvis/operador-elvis.componen
     DiretivaNgClassComponent,
     DiretivaNgstyleComponent,
     OperadorElvisComponent,
+    NgContentComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

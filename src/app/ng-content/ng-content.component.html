@@ -1,0 +1,28 @@
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <ng-content></ng-content>
+    </div>
+  </div><br>
+
+  <h3>exemplo com mais de um ngcontent</h3>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link"><ng-content select=".corpo"></ng-content></a>
+      <a href="#" class="card-link"><ng-content select=".titulo"></ng-content></a>
+    </div>
+  </div>
+
+<!-- no app-component é adicionado o texto entre as tags <ng-content-component></ng-content-component>
+que aparecerá onde as tags <ng-content></ng-content> estão. Além do texto pode passar outros components.
+
+se tiver mais de um ngContent dece adcionar select com um seletor e identificar no app para que o app saiba 
+diferenciar um ngContet de outro
+
+se no app tiver mais um seletor com a mesma tag aqui no component vai concatenar o conteudo-->

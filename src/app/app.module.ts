@@ -15,6 +15,7 @@ import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 //import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.component';
+import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
 
 
 //decorator @
@@ -30,11 +31,13 @@ import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.compone
     CicloComponent,
     DiretivaNgForComponent,
     DiretivaNgifComponent,
+    DiretivaNgClassComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [
     //import { CursoComponent } from './curso/curso.component';
     //import { QuartoModule } from './quarto/quarto.module';
+    //import { DiretivaNgclassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
     //BrowserModule prepara app para ser rodada em um browser
     BrowserModule,
     AppRoutingModule,

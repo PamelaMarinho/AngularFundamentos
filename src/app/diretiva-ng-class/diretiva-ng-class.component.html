@@ -1,14 +1,18 @@
-@import '~bootstrap-icons/font/bootstrap-icons.css' no src/styles.css
 <h1>
-    <i class="glyphicon"
-    [class.glyphicon-star-empty]="!meuFavorito"
-    [class.glyphicon-star]="meuFavorito"
-    (click)="onClick()"
+<i [class.bi-umbrella]="meuFavorito"
+    [class.bi-yin-yang]="!meuFavorito"
+    (click)="mudaStatus()"
+></i>
+</h1>
+
+
+<h1>
+    <i class="bi"
+      [ngClass]="{
+        'bi-alarm-fill': !meuFavorito,
+        'bi-alarm': meuFavorito}"
+      (click)="mudaStatus()"
     ></i>
   </h1>
-  
-  <h1>
-    <i [class.bi-star]="!meuFavorito"
-    [class.bi-star-fill]="meuFavorito"
-  ></i>
-  </h1>
+
+/* usado quando precisa manipular grande quantidade de atributos de classes*/

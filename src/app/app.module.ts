@@ -20,6 +20,7 @@ import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.co
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { ElementrefRendererComponent } from './elementref-renderer/elementref-renderer.component';
+import { HostlistenerHostbindingComponent } from './hostlistener-hostbinding/hostlistener-hostbinding.component';
 
 
 //decorator @
@@ -40,6 +41,7 @@ import { ElementrefRendererComponent } from './elementref-renderer/elementref-re
     OperadorElvisComponent,
     NgContentComponent,
     ElementrefRendererComponent,
+    HostlistenerHostbindingComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

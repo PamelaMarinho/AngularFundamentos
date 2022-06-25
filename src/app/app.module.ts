@@ -16,6 +16,7 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 //import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.component';
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
+import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 
 
 //decorator @
@@ -32,6 +33,7 @@ import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.
     DiretivaNgForComponent,
     DiretivaNgifComponent,
     DiretivaNgClassComponent,
+    DiretivaNgstyleComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [

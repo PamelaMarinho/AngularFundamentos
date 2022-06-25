@@ -1,0 +1,25 @@
+<h1>Style com property binding (style binding)</h1>
+<button
+    [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+    [style.color]="ativo ? 'white' : 'black'"
+    [style.fontWeight]="ativo ? 'bold' : 'normal'"
+    [style.fontSize]="tamanhoFonte + 'px'"
+    (click)="ativar()"
+>
+Mudar atributo do ativo
+</button>
+
+
+<h1>Style com diretiva nhStyle</h1>
+<button
+[ngStyle]="{'backgroundColor': ativo ? 'blue' : 'gray',
+'color': (ativo ? 'white' : 'black'),
+'fontWeight': ativo ? 'bold' : 'normal',
+'fontSize': tamanhoFonte + 'px'}"
+(click)="ativar()"
+>
+Botao com ngStyle
+</button>
+
+
+//é opcional usar () no valor dos elementos passados no obj exe: linha 18

@@ -1,0 +1,16 @@
+<p>Sem operador elvis</p>
+<p>
+    Fabricação: {{carro.fabricacao}}<br>
+    Vendido: {{carro.vendido != null ? carro.vendido : ''}}
+</p>
+
+<br>
+<h1>Com operador elvis</h1>
+<p>
+    Fabricação: {{carro.fabricacao}}<br>
+    Vendido: {{carro.vendido?.status}}
+    Vendedor: {{carro.vendido?.status}}
+</p>
+
+
+/* pode aninhar várias vezes (obj dentro de obj) */

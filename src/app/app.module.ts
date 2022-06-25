@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +13,7 @@ import { IoPropertiesComponent } from './input-properties/io-properties.componen
 import { OutputPropertiesComponent } from './output-properties/output-properties.component';
 import { CicloComponent } from './ciclo/ciclo.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
-import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
+//import { DiretivaNgSwitchComponent } from './diretiva-ng-switch/diretiva-ng-switch.component';
 import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.component';
 
 
@@ -28,21 +28,20 @@ import { DiretivaNgForComponent } from './diretiva-ngfor/diretiva-ng-for.compone
     IoPropertiesComponent,
     OutputPropertiesComponent,
     CicloComponent,
-    DiretivaNgifComponent,
-    DiretivaNgSwitchComponent,
     DiretivaNgForComponent,
+    DiretivaNgifComponent,
   ],
   //imports contem outros módulos que serão usados aqui ou nas declarations
   imports: [
-//import { CursoComponent } from './curso/curso.component';
-//import { QuartoModule } from './quarto/quarto.module';
-//BrowserModule prepara app para ser rodada em um browser
-  BrowserModule,
-  AppRoutingModule,
-  TesteModule,
-  TerceiroModule,
-  QuartoModule,
-  FormsModule,
+    //import { CursoComponent } from './curso/curso.component';
+    //import { QuartoModule } from './quarto/quarto.module';
+    //BrowserModule prepara app para ser rodada em um browser
+    BrowserModule,
+    AppRoutingModule,
+    TesteModule,
+    TerceiroModule,
+    QuartoModule,
+    FormsModule,
   ],
   //providers contem os serviços que ficarao disponiveis para todos os components declarados nesse módulo app
   providers: [],
